@@ -9,6 +9,7 @@ import { unified } from "unified";
 //import footnotes from "remark-footnotes";
 import frontmatter from "remark-frontmatter";
 import remarkGfm from "remark-gfm";
+import remarkMath from "remark-math";
 import remarkMdx from "remark-mdx";
 import remarkParse from "remark-parse";
 import type { Node } from "unist";
@@ -18,7 +19,8 @@ export const parseMarkdown = (text: string): Node => {
 		.use(remarkParse)
 		.use(frontmatter, ["yaml"])
 		.use(remarkGfm)
-		.use(remarkMdx);
+		.use(remarkMdx)
+		.use(remarkMath);
 	/*.use(footnotes, {
       inlineNotes: true
     });*/
