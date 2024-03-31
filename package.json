@@ -1,0 +1,52 @@
+{
+	"name": "textlint-plugin-mdx",
+	"version": "1.0.0",
+	"description": "textlint plugin to lint MDX",
+	"keywords": ["textlint", "textlintplugin", "plugin", "lint", "mdx"],
+	"repository": "https://github.com/3w36zj6/textlint-plugin-mdx",
+	"funding": {
+		"type": "github",
+		"url": "https://github.com/sponsors/3w36zj6"
+	},
+	"license": "MIT",
+	"author": "3w36zj6",
+	"main": "lib/index.js",
+	"files": ["lib"],
+	"scripts": {
+		"build": "esbuild --bundle src/*.ts --outdir=lib --platform=node",
+		"clean": "rm -frv lib",
+		"format": "biome format --write .",
+		"format:check": "biome format .",
+		"lint": "biome lint .",
+		"lint:fix": "biome lint --apply .",
+		"check": "biome check .",
+		"test": "vitest"
+	},
+	"dependencies": {
+		"remark-footnotes": "^4.0.1",
+		"remark-frontmatter": "^5.0.0",
+		"remark-gfm": "^4.0.0",
+		"remark-mdx": "^3.0.1",
+		"remark-parse": "^11.0.0",
+		"traverse": "^0.6.8",
+		"unified": "^11.0.4"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.6.3",
+		"@textlint/ast-node-types": "^14.0.4",
+		"@textlint/ast-tester": "^14.0.4",
+		"@textlint/types": "^14.0.4",
+		"@types/node": "^20.12.2",
+		"@types/traverse": "^0.6.36",
+		"bun-types": "latest",
+		"esbuild": "^0.20.2",
+		"textlint-scripts": "^14.0.4",
+		"textlint-tester": "^14.0.4",
+		"tsc": "^2.0.4",
+		"typescript": "^5.4.3",
+		"vitest": "^1.4.0"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	}
+}
