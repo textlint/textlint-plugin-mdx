@@ -38,6 +38,25 @@ bun add textlint-plugin-mdx
 - `extensions`: `string[]`
   - Additional file extensions for MDX
 
+## Examples
+
+### textlint-filter-rule-comments
+
+Example of how to use [textlint-filter-rule-comments](https://www.npmjs.com/package/textlint-filter-rule-comments) is shown below. There is no need to use syntax such as `{/* <!-- textlint-disable --> */}`.
+
+```mdx
+This is error text.
+
+{/* textlint-disable */}
+
+This is ignored text by rule.
+Disables all rules between comments
+
+{/* textlint-enable */}
+
+This is error text.
+```
+
 ## Contributing
 
 1. Fork it!
