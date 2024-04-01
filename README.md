@@ -25,6 +25,9 @@ bun add textlint-plugin-mdx
 
 ## Usage
 
+> [!CAUTION]
+> If you have enabled the `.mdx` extension in [@textlint/textlint-plugin-markdown](https://www.npmjs.com/package/@textlint/textlint-plugin-markdown), please remove it.
+
 ```json
 {
   "plugins": {
