@@ -1,0 +1,33 @@
+{
+	"type": "Document",
+	"children": [
+		{
+			"type": "CodeBlock",
+			"value": "import a from 'b'\nexport var c = ''",
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 0
+				},
+				"end": {
+					"line": 2,
+					"column": 17
+				}
+			},
+			"range": [0, 35],
+			"raw": "import a from 'b'\nexport var c = ''"
+		}
+	],
+	"loc": {
+		"start": {
+			"line": 1,
+			"column": 0
+		},
+		"end": {
+			"line": 3,
+			"column": 0
+		}
+	},
+	"range": [0, 36],
+	"raw": "import a from 'b'\nexport var c = ''\n"
+}

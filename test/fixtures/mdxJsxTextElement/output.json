@@ -1,0 +1,99 @@
+{
+	"type": "Document",
+	"children": [
+		{
+			"type": "Paragraph",
+			"children": [
+				{
+					"type": "Str",
+					"value": "a",
+					"loc": {
+						"start": {
+							"line": 1,
+							"column": 0
+						},
+						"end": {
+							"line": 1,
+							"column": 1
+						}
+					},
+					"range": [0, 1],
+					"raw": "a"
+				},
+				{
+					"type": "Paragraph",
+					"children": [
+						{
+							"type": "Str",
+							"value": "b",
+							"loc": {
+								"start": {
+									"line": 1,
+									"column": 12
+								},
+								"end": {
+									"line": 1,
+									"column": 13
+								}
+							},
+							"range": [12, 13],
+							"raw": "b"
+						}
+					],
+					"loc": {
+						"start": {
+							"line": 1,
+							"column": 1
+						},
+						"end": {
+							"line": 1,
+							"column": 25
+						}
+					},
+					"range": [1, 25],
+					"raw": "<Component>b</Component>"
+				},
+				{
+					"type": "Str",
+					"value": "c",
+					"loc": {
+						"start": {
+							"line": 1,
+							"column": 25
+						},
+						"end": {
+							"line": 1,
+							"column": 26
+						}
+					},
+					"range": [25, 26],
+					"raw": "c"
+				}
+			],
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 0
+				},
+				"end": {
+					"line": 1,
+					"column": 26
+				}
+			},
+			"range": [0, 26],
+			"raw": "a<Component>b</Component>c"
+		}
+	],
+	"loc": {
+		"start": {
+			"line": 1,
+			"column": 0
+		},
+		"end": {
+			"line": 2,
+			"column": 0
+		}
+	},
+	"range": [0, 27],
+	"raw": "a<Component>b</Component>c\n"
+}

@@ -1,0 +1,33 @@
+{
+	"type": "Document",
+	"children": [
+		{
+			"type": "Html",
+			"children": [],
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 0
+				},
+				"end": {
+					"line": 1,
+					"column": 23
+				}
+			},
+			"range": [0, 23],
+			"raw": "<Component {...props}/>"
+		}
+	],
+	"loc": {
+		"start": {
+			"line": 1,
+			"column": 0
+		},
+		"end": {
+			"line": 2,
+			"column": 0
+		}
+	},
+	"range": [0, 24],
+	"raw": "<Component {...props}/>\n"
+}

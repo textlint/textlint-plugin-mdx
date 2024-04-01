@@ -1,0 +1,82 @@
+{
+	"type": "Document",
+	"children": [
+		{
+			"type": "Paragraph",
+			"children": [
+				{
+					"type": "Str",
+					"value": "b ",
+					"loc": {
+						"start": {
+							"line": 1,
+							"column": 0
+						},
+						"end": {
+							"line": 1,
+							"column": 2
+						}
+					},
+					"range": [0, 2],
+					"raw": "b "
+				},
+				{
+					"type": "Code",
+					"value": "true",
+					"loc": {
+						"start": {
+							"line": 1,
+							"column": 2
+						},
+						"end": {
+							"line": 1,
+							"column": 8
+						}
+					},
+					"range": [2, 8],
+					"raw": "{true}"
+				},
+				{
+					"type": "Str",
+					"value": ".",
+					"loc": {
+						"start": {
+							"line": 1,
+							"column": 8
+						},
+						"end": {
+							"line": 1,
+							"column": 9
+						}
+					},
+					"range": [8, 9],
+					"raw": "."
+				}
+			],
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 0
+				},
+				"end": {
+					"line": 1,
+					"column": 9
+				}
+			},
+			"range": [0, 9],
+			"raw": "b {true}."
+		}
+	],
+	"loc": {
+		"start": {
+			"line": 1,
+			"column": 0
+		},
+		"end": {
+			"line": 2,
+			"column": 0
+		}
+	},
+	"range": [0, 10],
+	"raw": "b {true}.\n"
+}
