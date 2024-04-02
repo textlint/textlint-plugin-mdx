@@ -1,0 +1,147 @@
+{
+	"type": "Document",
+	"children": [
+		{
+			"type": "Paragraph",
+			"children": [
+				{
+					"type": "Str",
+					"value": "a ",
+					"loc": {
+						"start": {
+							"line": 1,
+							"column": 0
+						},
+						"end": {
+							"line": 1,
+							"column": 2
+						}
+					},
+					"range": [0, 2],
+					"raw": "a "
+				},
+				{
+					"type": "Comment",
+					"value": "comment",
+					"loc": {
+						"start": {
+							"line": 1,
+							"column": 2
+						},
+						"end": {
+							"line": 1,
+							"column": 15
+						}
+					},
+					"range": [2, 15],
+					"raw": "{/*comment*/}"
+				},
+				{
+					"type": "Str",
+					"value": " b",
+					"loc": {
+						"start": {
+							"line": 1,
+							"column": 15
+						},
+						"end": {
+							"line": 1,
+							"column": 17
+						}
+					},
+					"range": [15, 17],
+					"raw": " b"
+				}
+			],
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 0
+				},
+				"end": {
+					"line": 1,
+					"column": 17
+				}
+			},
+			"range": [0, 17],
+			"raw": "a {/*comment*/} b"
+		},
+		{
+			"type": "Paragraph",
+			"children": [
+				{
+					"type": "Str",
+					"value": "a ",
+					"loc": {
+						"start": {
+							"line": 3,
+							"column": 0
+						},
+						"end": {
+							"line": 3,
+							"column": 2
+						}
+					},
+					"range": [19, 21],
+					"raw": "a "
+				},
+				{
+					"type": "Code",
+					"value": " /*comment*/ ",
+					"loc": {
+						"start": {
+							"line": 3,
+							"column": 2
+						},
+						"end": {
+							"line": 3,
+							"column": 17
+						}
+					},
+					"range": [21, 36],
+					"raw": "{ /*comment*/ }"
+				},
+				{
+					"type": "Str",
+					"value": " b",
+					"loc": {
+						"start": {
+							"line": 3,
+							"column": 17
+						},
+						"end": {
+							"line": 3,
+							"column": 19
+						}
+					},
+					"range": [36, 38],
+					"raw": " b"
+				}
+			],
+			"loc": {
+				"start": {
+					"line": 3,
+					"column": 0
+				},
+				"end": {
+					"line": 3,
+					"column": 19
+				}
+			},
+			"range": [19, 38],
+			"raw": "a { /*comment*/ } b"
+		}
+	],
+	"loc": {
+		"start": {
+			"line": 1,
+			"column": 0
+		},
+		"end": {
+			"line": 4,
+			"column": 0
+		}
+	},
+	"range": [0, 39],
+	"raw": "a {/*comment*/} b\n\na { /*comment*/ } b\n"
+}

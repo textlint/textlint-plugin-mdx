@@ -1,0 +1,65 @@
+{
+	"type": "Document",
+	"children": [
+		{
+			"type": "Comment",
+			"value": " comment ",
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 0
+				},
+				"end": {
+					"line": 1,
+					"column": 15
+				}
+			},
+			"range": [0, 15],
+			"raw": "{/* comment */}"
+		},
+		{
+			"type": "CodeBlock",
+			"value": " /* comment */ ",
+			"loc": {
+				"start": {
+					"line": 3,
+					"column": 0
+				},
+				"end": {
+					"line": 3,
+					"column": 17
+				}
+			},
+			"range": [17, 34],
+			"raw": "{ /* comment */ }"
+		},
+		{
+			"type": "CodeBlock",
+			"value": "\n/* comment */\n",
+			"loc": {
+				"start": {
+					"line": 5,
+					"column": 0
+				},
+				"end": {
+					"line": 7,
+					"column": 1
+				}
+			},
+			"range": [36, 53],
+			"raw": "{\n/* comment */\n}"
+		}
+	],
+	"loc": {
+		"start": {
+			"line": 1,
+			"column": 0
+		},
+		"end": {
+			"line": 8,
+			"column": 0
+		}
+	},
+	"range": [0, 54],
+	"raw": "{/* comment */}\n\n{ /* comment */ }\n\n{\n/* comment */\n}\n"
+}
