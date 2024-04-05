@@ -3,7 +3,7 @@
 	"version": "1.0.1",
 	"description": "textlint plugin to lint MDX",
 	"keywords": ["textlint", "textlintplugin", "plugin", "lint", "mdx"],
-	"repository": "https://github.com/3w36zj6/textlint-plugin-mdx",
+	"repository": "https://github.com/textlint/textlint-plugin-mdx",
 	"funding": {
 		"type": "github",
 		"url": "https://github.com/sponsors/3w36zj6"
