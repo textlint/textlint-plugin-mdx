@@ -2,8 +2,8 @@
 
 [![NPM Version](https://img.shields.io/npm/v/textlint-plugin-mdx)](https://www.npmjs.com/package/textlint-plugin-mdx?activeTab=versions)
 [![NPM Downloads](https://img.shields.io/npm/d18m/textlint-plugin-mdx)](https://www.npmjs.com/package/textlint-plugin-mdx)
-[![NPM License](https://img.shields.io/npm/l/textlint-plugin-mdx)](https://github.com/3w36zj6/textlint-plugin-mdx/blob/HEAD/LICENSE)
-[![CI](https://github.com/3w36zj6/textlint-plugin-mdx/actions/workflows/ci.yaml/badge.svg?branch=main&event=push)](https://github.com/3w36zj6/textlint-plugin-mdx/actions/workflows/ci.yaml)
+[![NPM License](https://img.shields.io/npm/l/textlint-plugin-mdx)](https://github.com/textlint/textlint-plugin-mdx/blob/HEAD/LICENSE)
+[![CI](https://github.com/textlint/textlint-plugin-mdx/actions/workflows/ci.yaml/badge.svg?branch=main&event=push)](https://github.com/textlint/textlint-plugin-mdx/actions/workflows/ci.yaml)
 
 [textlint](https://github.com/textlint/textlint) plugin to lint [MDX](https://mdxjs.com/)
 
@@ -67,6 +67,10 @@ This is error text.
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
+
+## Maintainers
+
+- [@3w36zj6](https://github.com/3w36zj6)
 
 ## License
 
