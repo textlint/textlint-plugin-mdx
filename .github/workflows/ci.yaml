@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  format:
+  ci:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout your repository using git
@@ -18,20 +18,8 @@ jobs:
         uses: jdx/mise-action@v2
       - name: Install dependencies
         run: bun install --frozen-lockfile
-      - name: Format
-        run: bun run format:check
-
-  lint:
-    runs-on: ubuntu-22.04
-    steps:
-      - name: Checkout your repository using git
-        uses: actions/checkout@v4
-      - name: Setup Node and Bun
-        uses: jdx/mise-action@v2
-      - name: Install dependencies
-        run: bun install --frozen-lockfile
-      - name: Lint
-        run: bun run lint
+      - name: Check using Biome
+        run: bun run ci
 
   test:
     runs-on: ubuntu-22.04
