@@ -22,6 +22,7 @@
 		"check": "biome check .",
 		"check:fix": "biome check --apply .",
 		"ci": "biome ci .",
+		"tsc": "tsc",
 		"test": "vitest"
 	},
 	"dependencies": {},
