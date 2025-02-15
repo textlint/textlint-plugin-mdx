@@ -21,6 +21,18 @@ jobs:
       - name: Check using Biome
         run: bun run ci
 
+  tsc:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout your repository using git
+        uses: actions/checkout@v4
+      - name: Setup Node and Bun
+        uses: jdx/mise-action@v2
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+      - name: Check using tsc
+        run: bun run tsc
+
   test:
     runs-on: ubuntu-22.04
     steps:
