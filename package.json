@@ -13,7 +13,7 @@
 	"main": "lib/index.js",
 	"files": ["lib"],
 	"scripts": {
-		"build": "esbuild --bundle src/*.ts --outdir=lib --platform=node",
+		"build": "esbuild src/index.ts --bundle --outfile=lib/index.js --platform=node --minify",
 		"clean": "rm -frv lib",
 		"format": "biome format --write .",
 		"format:check": "biome format .",
@@ -22,17 +22,15 @@
 		"check": "biome check .",
 		"test": "vitest"
 	},
-	"dependencies": {
-		"remark-footnotes": "^4.0.1",
+	"dependencies": {},
+	"devDependencies": {
 		"remark-frontmatter": "^5.0.0",
 		"remark-gfm": "^4.0.0",
 		"remark-math": "^6.0.0",
 		"remark-mdx": "^3.0.1",
 		"remark-parse": "^11.0.0",
 		"traverse": "^0.6.8",
-		"unified": "^11.0.4"
-	},
-	"devDependencies": {
+		"unified": "^11.0.4",
 		"@biomejs/biome": "^1.6.3",
 		"@textlint/ast-node-types": "^14.0.4",
 		"@textlint/ast-tester": "^14.0.4",

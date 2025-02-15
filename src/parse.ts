@@ -6,7 +6,6 @@ import { SyntaxMap } from "./mapping/markdown-syntax-map";
 
 import { unified } from "unified";
 
-//import footnotes from "remark-footnotes";
 import frontmatter from "remark-frontmatter";
 import remarkGfm from "remark-gfm";
 import remarkMath from "remark-math";
@@ -21,9 +20,6 @@ export const parseMarkdown = (text: string): Node => {
 		.use(remarkGfm)
 		.use(remarkMdx)
 		.use(remarkMath);
-	/*.use(footnotes, {
-      inlineNotes: true
-    });*/
 	return remark.parse(text);
 };
 
