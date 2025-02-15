@@ -1,7 +1,7 @@
-// parse all fixture and should has
-import { test } from "@textlint/ast-tester";
 import fs from "node:fs";
 import path from "node:path";
+// parse all fixture and should has
+import { test } from "@textlint/ast-tester";
 import { describe, expect, it } from "vitest";
 import { parse } from "../src/parse";
 
