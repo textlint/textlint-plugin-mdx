@@ -62,6 +62,28 @@ This is error text.
 
 ## Contributing
 
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) v20.12.0
+- [Bun](https://bun.sh/) v1.0.36
+
+### Setup
+
+```sh
+bun install
+```
+
+### Commands
+
+```sh
+bun test          # run tests
+bun run build     # build the package
+bun run tsc       # type check
+bun run ci        # lint and format check
+```
+
+### Workflow
+
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
 3. Commit your changes: `git commit -am 'Add some feature'`
