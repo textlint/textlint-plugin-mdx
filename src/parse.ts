@@ -6,6 +6,7 @@ import { SyntaxMap } from "./mapping/markdown-syntax-map";
 
 import { unified } from "unified";
 
+import remarkDirective from "remark-directive";
 import frontmatter from "remark-frontmatter";
 import remarkGfm from "remark-gfm";
 import remarkMath from "remark-math";
@@ -19,7 +20,8 @@ export const parseMarkdown = (text: string): Node => {
 		.use(frontmatter, ["yaml"])
 		.use(remarkGfm)
 		.use(remarkMdx)
-		.use(remarkMath);
+		.use(remarkMath)
+		.use(remarkDirective);
 	return remark.parse(text);
 };
 
@@ -49,6 +51,10 @@ export function parse(text: string): TxtDocumentNode {
 			/^(mdxJsxFlowElement|mdxJsxTextElement|mdxjsEsm|mdxFlowExpression|mdxTextExpression)$/.test(
 				node.type,
 			);
+		const isDirective =
+			node &&
+			Object.prototype.hasOwnProperty.call(node, "type") &&
+			/^(textDirective|leafDirective|containerDirective)$/.test(node.type);
 		if (this.notLeaf) {
 			// MDX support
 			if (isMdx) {
@@ -79,6 +85,21 @@ export function parse(text: string): TxtDocumentNode {
 				}
 				if (Object.prototype.hasOwnProperty.call(node, "name")) {
 					node.name = undefined;
+				}
+				if (Object.prototype.hasOwnProperty.call(node, "data")) {
+					node.data = undefined;
+				}
+			} else if (isDirective) {
+				// remark-directive support
+				const replacedType = SyntaxMap[node.type as keyof typeof SyntaxMap];
+				if (replacedType) {
+					node.type = replacedType;
+				}
+				if (Object.prototype.hasOwnProperty.call(node, "name")) {
+					node.name = undefined;
+				}
+				if (Object.prototype.hasOwnProperty.call(node, "attributes")) {
+					node.attributes = undefined;
 				}
 				if (Object.prototype.hasOwnProperty.call(node, "data")) {
 					node.data = undefined;

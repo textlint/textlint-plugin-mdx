@@ -1,0 +1,103 @@
+{
+	"type": "Document",
+	"children": [
+		{
+			"type": "ContainerDirective",
+			"children": [
+				{
+					"type": "Paragraph",
+					"data": {
+						"directiveLabel": true
+					},
+					"children": [
+						{
+							"type": "Str",
+							"value": "Note title",
+							"loc": {
+								"start": {
+									"line": 1,
+									"column": 8
+								},
+								"end": {
+									"line": 1,
+									"column": 18
+								}
+							},
+							"range": [8, 18],
+							"raw": "Note title"
+						}
+					],
+					"loc": {
+						"start": {
+							"line": 1,
+							"column": 7
+						},
+						"end": {
+							"line": 1,
+							"column": 19
+						}
+					},
+					"range": [7, 19],
+					"raw": "[Note title]"
+				},
+				{
+					"type": "Paragraph",
+					"children": [
+						{
+							"type": "Str",
+							"value": "Content here.",
+							"loc": {
+								"start": {
+									"line": 2,
+									"column": 0
+								},
+								"end": {
+									"line": 2,
+									"column": 13
+								}
+							},
+							"range": [20, 33],
+							"raw": "Content here."
+						}
+					],
+					"loc": {
+						"start": {
+							"line": 2,
+							"column": 0
+						},
+						"end": {
+							"line": 2,
+							"column": 13
+						}
+					},
+					"range": [20, 33],
+					"raw": "Content here."
+				}
+			],
+			"loc": {
+				"start": {
+					"line": 1,
+					"column": 0
+				},
+				"end": {
+					"line": 3,
+					"column": 3
+				}
+			},
+			"range": [0, 37],
+			"raw": ":::note[Note title]\nContent here.\n:::"
+		}
+	],
+	"loc": {
+		"start": {
+			"line": 1,
+			"column": 0
+		},
+		"end": {
+			"line": 4,
+			"column": 0
+		}
+	},
+	"range": [0, 38],
+	"raw": ":::note[Note title]\nContent here.\n:::\n"
+}

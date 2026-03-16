@@ -32,6 +32,10 @@ export const SyntaxMap = {
 	imageReference: "ImageReference",
 	footnoteReference: "FootnoteReference", // textlint@12+
 	definition: "Definition",
+	// remark-directive
+	textDirective: "TextDirective",
+	leafDirective: "LeafDirective",
+	containerDirective: "ContainerDirective",
 	/**
 	 * @deprecated
 	 */
