@@ -111,6 +111,9 @@ export function parse(text: string): TxtDocumentNode {
 				} else {
 					node.type = replacedType;
 				}
+				if (Object.prototype.hasOwnProperty.call(node, "data")) {
+					node.data = undefined;
+				}
 			}
 			// map `range`, `loc` and `raw` to node
 			if (node.position) {
