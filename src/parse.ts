@@ -19,9 +19,9 @@ export const parseMarkdown = (text: string): Node => {
 		.use(remarkParse)
 		.use(frontmatter, ["yaml"])
 		.use(remarkGfm)
+		.use(remarkDirective)
 		.use(remarkMdx)
-		.use(remarkMath)
-		.use(remarkDirective);
+		.use(remarkMath);
 	return remark.parse(text);
 };
 
