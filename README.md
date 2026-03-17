@@ -67,7 +67,7 @@ This is error text.
 - [Node.js](https://nodejs.org/)
 - [Bun](https://bun.sh/)
 
-See `.tool-versions` for the exact versions required.
+See the Node.js and Bun entries in `.tool-versions` for the exact versions used in this project.
 
 ### Setup
 
