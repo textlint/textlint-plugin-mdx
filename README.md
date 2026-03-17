@@ -64,8 +64,10 @@ This is error text.
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) v20.12.0
-- [Bun](https://bun.sh/) v1.0.36
+- [Node.js](https://nodejs.org/)
+- [Bun](https://bun.sh/)
+
+See `.tool-versions` for the exact versions required.
 
 ### Setup
 
