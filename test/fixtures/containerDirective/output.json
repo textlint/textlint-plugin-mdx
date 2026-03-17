@@ -20,10 +20,7 @@
 									"column": 18
 								}
 							},
-							"range": [
-								8,
-								18
-							],
+							"range": [8, 18],
 							"raw": "Note title"
 						}
 					],
@@ -37,10 +34,7 @@
 							"column": 19
 						}
 					},
-					"range": [
-						7,
-						19
-					],
+					"range": [7, 19],
 					"raw": "[Note title]"
 				},
 				{
@@ -59,10 +53,7 @@
 									"column": 13
 								}
 							},
-							"range": [
-								20,
-								33
-							],
+							"range": [20, 33],
 							"raw": "Content here."
 						}
 					],
@@ -76,10 +67,7 @@
 							"column": 13
 						}
 					},
-					"range": [
-						20,
-						33
-					],
+					"range": [20, 33],
 					"raw": "Content here."
 				}
 			],
@@ -93,10 +81,7 @@
 					"column": 3
 				}
 			},
-			"range": [
-				0,
-				37
-			],
+			"range": [0, 37],
 			"raw": ":::note[Note title]\nContent here.\n:::"
 		}
 	],
@@ -110,9 +95,6 @@
 			"column": 0
 		}
 	},
-	"range": [
-		0,
-		38
-	],
+	"range": [0, 38],
 	"raw": ":::note[Note title]\nContent here.\n:::\n"
 }
