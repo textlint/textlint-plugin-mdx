@@ -23,18 +23,10 @@
 		"check:fix": "biome check --apply .",
 		"ci": "biome ci .",
 		"tsc": "tsc",
-		"test": "vitest"
+		"test": "bun test"
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"remark-directive": "^4.0.0",
-		"remark-frontmatter": "^5.0.0",
-		"remark-gfm": "^4.0.0",
-		"remark-math": "^6.0.0",
-		"remark-mdx": "^3.0.1",
-		"remark-parse": "^11.0.0",
-		"traverse": "^0.6.8",
-		"unified": "^11.0.4",
 		"@biomejs/biome": "^1.6.3",
 		"@textlint/ast-node-types": "^14.0.4",
 		"@textlint/ast-tester": "^14.0.4",
@@ -44,10 +36,17 @@
 		"bun-types": "latest",
 		"esbuild": "^0.27.4",
 		"micromark-extension-mdx-expression": "^3.0.0",
+		"remark-directive": "^4.0.0",
+		"remark-frontmatter": "^5.0.0",
+		"remark-gfm": "^4.0.0",
+		"remark-math": "^6.0.0",
+		"remark-mdx": "^3.0.1",
+		"remark-parse": "^11.0.0",
 		"textlint-scripts": "^14.0.4",
 		"textlint-tester": "^14.0.4",
+		"traverse": "^0.6.8",
 		"typescript": "^5.4.3",
-		"vitest": "^1.4.0"
+		"unified": "^11.0.4"
 	},
 	"peerDependencies": {
 		"typescript": "^5.0.0"
