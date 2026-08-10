@@ -27,9 +27,6 @@
         "unified": "^11.0.4",
         "vitest": "^1.4.0",
       },
-      "peerDependencies": {
-        "typescript": "^5.0.0",
-      },
     },
   },
   "packages": {
