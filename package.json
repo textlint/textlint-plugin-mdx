@@ -48,8 +48,5 @@
 		"textlint-tester": "^14.0.4",
 		"typescript": "^5.4.3",
 		"vitest": "^1.4.0"
-	},
-	"peerDependencies": {
-		"typescript": "^5.0.0"
 	}
 }
