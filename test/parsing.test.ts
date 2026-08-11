@@ -15,7 +15,8 @@ describe("parsing", () => {
 				"utf-8",
 			);
 			const AST = parse(input);
-			test(AST);
+
+			test(AST as unknown as Record<string, unknown>);
 			const output = JSON.parse(
 				fs.readFileSync(
 					path.join(fixtureDir, filePath, "output.json"),

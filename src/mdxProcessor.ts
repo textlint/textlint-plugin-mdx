@@ -4,10 +4,14 @@ import { parse } from "./parse";
 
 export class MdxProcessor {
 	config: TextlintPluginOptions;
-	extensions: Array<string>;
-	constructor(config = {}) {
+	extensions: string[];
+	constructor(config: TextlintPluginOptions = {}) {
 		this.config = config;
-		this.extensions = this.config.extensions ? this.config.extensions : [];
+		this.extensions = Array.isArray(this.config.extensions)
+			? this.config.extensions.filter(
+					(extension): extension is string => typeof extension === "string",
+				)
+			: [];
 	}
 
 	availableExtensions() {
